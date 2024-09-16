@@ -10,7 +10,7 @@ package ru.netology.javaqa.javaqamvn6.services;
                 if (money >= threshold) { // можем ли отдыхать?
                     count++; // увеличиваем счётчик месяцев отдыха
                     money = money - expenses; // уменьшаем деньги на обязательные траты
-                    money = money - money / 3; // уменьшаем деньги на траты на отдых
+                    money = money / 3; // уменьшаем деньги на траты на отдых
                     System.out.println("Месяц " + month + "." + "Денег " + money + "." + "Буду отдыхать." + "Потратил " + "-" + expenses + ", траты на отдых " + "-" + money / 3);
                 } else {
                     money = money + income - expenses; // увеличиваем деньги на доход от работы и уменьшаем на обязательные траты
